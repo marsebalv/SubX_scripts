@@ -17,8 +17,8 @@ library('pracma')
   
 #outPath='/pikachu/datos4/SubX/'
 outPath='/datos/SubX/'
-varnames=c('ua','ua','rlut','tas','ts','zg','va','va','pr','zg')          # Variable names
-plevstrs=c('850','200','toa','2m','sfc','500','200','850','sfc','200')    # Must be same size as varname, for variables with no plevels, use sfc or 10m
+#varnames=c('ua','ua','rlut','tas','ts','zg','va','va','pr','zg')          # Variable names
+#plevstrs=c('850','200','toa','2m','sfc','500','200','850','sfc','200')    # Must be same size as varname, for variables with no plevels, use sfc or 10m
 groups=c('GMAO','RSMAS','ESRL','ECCC','NRL','EMC')                        # Modeling Groups (must be same # elements as models below)
 models=c('GEOS_V2p1','CCSM4','FIMr1p1','GEM','NESM','GEFS')               # Model Name (must be same # of elements as groups above)
 # groups=c('RSMAS','ESRL','ECCC','NRL','EMC')                        # Modeling Groups (must be same # elements as models below)
@@ -26,8 +26,8 @@ models=c('GEOS_V2p1','CCSM4','FIMr1p1','GEM','NESM','GEFS')               # Mode
 
 # groups=c('GMAO')
 # models=c('GEOS_V2p1')
-# varnames=c('rlut')
-# plevstrs=c('toa')
+varnames=c('rlut')
+plevstrs=c('toa')
                                                                                                                                                                 
 dfv=-9.99e-8;                                                             # Default missing_value or FillValue if not specified in input data file
 type='hindcast'                                                           # hindcast or forecast
