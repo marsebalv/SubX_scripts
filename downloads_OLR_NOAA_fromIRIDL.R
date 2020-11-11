@@ -122,3 +122,5 @@ dt.anom$targetdate=as.Date(dt.anom$targetdate)
 
 # Guardo la data table de las observaciones
 saveRDS(dt.anom, file = "olranom_NOAA_9915.rds")
+
+#end
